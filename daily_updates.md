@@ -37,3 +37,25 @@
 
 * to see a python dict log in json format in bash  
             `echo "{'name': 'GigabitEthernet3/0/0', 'fname': None}"|tr \' \" | sed 's/None/null/g' |jq . `
+
+========== Wed Jan 15 12:30:05 IST 2020 ========== 
+* tmux set vim keybindings in copy mode
+            `set-window-option -g mode-keys vi`
+* copying a text in tmux
+     if we are in vim mode , enter copy mode and press space
+     else enter Control-space to select text
+     press enter to copy
+     to paste press C-b 
+
+========== Mon Feb  3 12:19:59 IST 2020 ========== 
+* taking pcaps in VPP
+	vpp# pcap tx trace status
+	vpp# pcap tx trace on max 35 intfc GigabitEthernet0/8/0 file vppTest.pcap
+	vpp# vppctl pcap tx trace off
+
+
+========== Tue Feb  4 17:23:37 IST 2020 ========== 
+* reducing escape delay in vim inside tmux
+      add this line in .tmux.conf 
+		set -s escape-time 0
+
