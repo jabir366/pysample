@@ -36,7 +36,7 @@
 ========== Sat Dec 21 15:02:23 IST 2019 ========== 
 
 * to see a python dict log in json format in bash  
-            `echo "{'name': 'GigabitEthernet3/0/0', 'fname': None}"|tr \' \" | sed 's/None/null/g' |jq . `
+            `echo "{'name': 'GigabitEthernet3/0/0', 'fname': None}"|tr \' \" | sed 's/None/null/g;s/True/true/g;s/False/false/g'|jq . `
 
 ========== Wed Jan 15 12:30:05 IST 2020 ========== 
 * tmux set vim keybindings in copy mode
@@ -51,7 +51,7 @@
 * taking pcaps in VPP
 	vpp# pcap tx trace status
 	vpp# pcap tx trace on max 35 intfc GigabitEthernet0/8/0 file vppTest.pcap
-	vpp# vppctl pcap tx trace off
+	vpp# pcap tx trace off
 
 
 ========== Tue Feb  4 17:23:37 IST 2020 ========== 
