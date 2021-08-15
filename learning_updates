@@ -1,0 +1,9 @@
+Pytest 
+* pytest -k "sam or bam" will run tests named in quotes
+* pyttem -m run_blah will run functions wih @pytest.mark.run_blah at their head
+* pytest -x will run the last failed items(very useful)
+* pytest --maxfail=2 will stop after 2 fails
+* pytest --lf runs only the test failed
+* pytest --ff will run the failed ones first
+* pytest --tb=no will suppress the bts
+* pytest --collect-only will list functions
